@@ -2,11 +2,9 @@
 
 namespace WonderWp\Component\Task;
 
-interface TaskServiceInterface
+use WonderWp\Component\PluginSkeleton\Service\RegistrableInterface;
+
+interface TaskServiceInterface extends RegistrableInterface
 {
-    /**
-     * Typically Where you'll have your \WP_CLI::add_command calls
-     * @return mixed
-     */
-    public function registerCommands();
+
 }
