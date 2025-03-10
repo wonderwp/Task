@@ -24,6 +24,7 @@ class WpCliCommandService extends AbstractCommandService
     protected function autoloadFile(string $className, string $filePath): object
     {
         $instance = parent::autoloadFile($className, $filePath);
+        
         if($instance instanceof WpCliCommandInterface){
             $this->registerCommand($instance);
         }
