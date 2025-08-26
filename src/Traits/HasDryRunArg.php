@@ -4,8 +4,6 @@ namespace WonderWp\Component\Task\Traits;
 
 trait HasDryRunArg
 {
-    const DRY_RUN_ARG = 'dry-run';
-
     protected static function getDryRunArgDefinition()
     {
         return [
